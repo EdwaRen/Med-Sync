@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F01BAE21E20006C0080FBDB /* DocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01BAE11E20006C0080FBDB /* DocViewController.swift */; };
+		1F585F1E1E1E2B9A00F382BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F1D1E1E2B9A00F382BE /* AppDelegate.swift */; };
+		1F585F201E1E2B9A00F382BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F1F1E1E2B9A00F382BE /* FirstViewController.swift */; };
+		1F585F221E1E2B9A00F382BE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F211E1E2B9A00F382BE /* SecondViewController.swift */; };
+		1F585F251E1E2B9A00F382BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F585F231E1E2B9A00F382BE /* Main.storyboard */; };
+		1F585F271E1E2B9A00F382BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F585F261E1E2B9A00F382BE /* Assets.xcassets */; };
+		1F585F2A1E1E2B9A00F382BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F585F281E1E2B9A00F382BE /* LaunchScreen.storyboard */; };
+		1F585F351E1E2B9A00F382BE /* MedSync4_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F341E1E2B9A00F382BE /* MedSync4_0Tests.swift */; };
+		1F585F401E1E2B9A00F382BE /* MedSync4_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F3F1E1E2B9A00F382BE /* MedSync4_0UITests.swift */; };
+		1F585F4E1E1E2F1A00F382BE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F4D1E1E2F1A00F382BE /* TabBarViewController.swift */; };
+		1F585F521E1E9F3B00F382BE /* Raleway in Resources */ = {isa = PBXBuildFile; fileRef = 1F585F511E1E9F3B00F382BE /* Raleway */; };
+		1F636FAA1E1F9A500001D24E /* DocTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F636FA91E1F9A500001D24E /* DocTableViewController.swift */; };
+		1F636FAC1E1F9A710001D24E /* DocTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F636FAB1E1F9A710001D24E /* DocTableViewCell.swift */; };
+		1F97413B1E376B39000CF3C1 /* HubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413A1E376B39000CF3C1 /* HubTableViewCell.swift */; };
+		1F97413D1E376B54000CF3C1 /* HubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413C1E376B54000CF3C1 /* HubTableViewController.swift */; };
+		1F97413F1E376B65000CF3C1 /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413E1E376B65000CF3C1 /* HubViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F585F311E1E2B9A00F382BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F585F121E1E2B9A00F382BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F585F191E1E2B9A00F382BE;
+			remoteInfo = MedSync4.0;
+		};
+		1F585F3C1E1E2B9A00F382BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F585F121E1E2B9A00F382BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F585F191E1E2B9A00F382BE;
+			remoteInfo = MedSync4.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F01BAE11E20006C0080FBDB /* DocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocViewController.swift; sourceTree = "<group>"; };
+		1F585F1A1E1E2B9A00F382BE /* MedSync4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedSync4.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F585F1D1E1E2B9A00F382BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F585F1F1E1E2B9A00F382BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		1F585F211E1E2B9A00F382BE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1F585F241E1E2B9A00F382BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F585F261E1E2B9A00F382BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F585F291E1E2B9A00F382BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F585F2B1E1E2B9A00F382BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F585F301E1E2B9A00F382BE /* MedSync4.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedSync4.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F585F341E1E2B9A00F382BE /* MedSync4_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedSync4_0Tests.swift; sourceTree = "<group>"; };
+		1F585F361E1E2B9A00F382BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F585F3B1E1E2B9A00F382BE /* MedSync4.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedSync4.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F585F3F1E1E2B9A00F382BE /* MedSync4_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedSync4_0UITests.swift; sourceTree = "<group>"; };
+		1F585F411E1E2B9A00F382BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F585F4D1E1E2F1A00F382BE /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		1F585F511E1E9F3B00F382BE /* Raleway */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Raleway; sourceTree = "<group>"; };
+		1F636FA91E1F9A500001D24E /* DocTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocTableViewController.swift; sourceTree = "<group>"; };
+		1F636FAB1E1F9A710001D24E /* DocTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocTableViewCell.swift; sourceTree = "<group>"; };
+		1F97413A1E376B39000CF3C1 /* HubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubTableViewCell.swift; sourceTree = "<group>"; };
+		1F97413C1E376B54000CF3C1 /* HubTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubTableViewController.swift; sourceTree = "<group>"; };
+		1F97413E1E376B65000CF3C1 /* HubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F585F171E1E2B9A00F382BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F585F2D1E1E2B9A00F382BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F585F381E1E2B9A00F382BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F585F111E1E2B9A00F382BE = {
+			isa = PBXGroup;
+			children = (
+				1F585F1C1E1E2B9A00F382BE /* MedSync4.0 */,
+				1F585F331E1E2B9A00F382BE /* MedSync4.0Tests */,
+				1F585F3E1E1E2B9A00F382BE /* MedSync4.0UITests */,
+				1F585F1B1E1E2B9A00F382BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F585F1B1E1E2B9A00F382BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F585F1A1E1E2B9A00F382BE /* MedSync4.0.app */,
+				1F585F301E1E2B9A00F382BE /* MedSync4.0Tests.xctest */,
+				1F585F3B1E1E2B9A00F382BE /* MedSync4.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F585F1C1E1E2B9A00F382BE /* MedSync4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1F9741371E376A98000CF3C1 /* HealthHub */,
+				1F636FA81E1F9A1E0001D24E /* Doctors */,
+				1F585F1D1E1E2B9A00F382BE /* AppDelegate.swift */,
+				1F585F1F1E1E2B9A00F382BE /* FirstViewController.swift */,
+				1F585F211E1E2B9A00F382BE /* SecondViewController.swift */,
+				1F585F231E1E2B9A00F382BE /* Main.storyboard */,
+				1F585F261E1E2B9A00F382BE /* Assets.xcassets */,
+				1F585F281E1E2B9A00F382BE /* LaunchScreen.storyboard */,
+				1F585F2B1E1E2B9A00F382BE /* Info.plist */,
+				1F585F4D1E1E2F1A00F382BE /* TabBarViewController.swift */,
+				1F585F511E1E9F3B00F382BE /* Raleway */,
+			);
+			path = MedSync4.0;
+			sourceTree = "<group>";
+		};
+		1F585F331E1E2B9A00F382BE /* MedSync4.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F585F341E1E2B9A00F382BE /* MedSync4_0Tests.swift */,
+				1F585F361E1E2B9A00F382BE /* Info.plist */,
+			);
+			path = MedSync4.0Tests;
+			sourceTree = "<group>";
+		};
+		1F585F3E1E1E2B9A00F382BE /* MedSync4.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F585F3F1E1E2B9A00F382BE /* MedSync4_0UITests.swift */,
+				1F585F411E1E2B9A00F382BE /* Info.plist */,
+			);
+			path = MedSync4.0UITests;
+			sourceTree = "<group>";
+		};
+		1F636FA81E1F9A1E0001D24E /* Doctors */ = {
+			isa = PBXGroup;
+			children = (
+				1F636FA91E1F9A500001D24E /* DocTableViewController.swift */,
+				1F636FAB1E1F9A710001D24E /* DocTableViewCell.swift */,
+				1F01BAE11E20006C0080FBDB /* DocViewController.swift */,
+			);
+			name = Doctors;
+			sourceTree = "<group>";
+		};
+		1F9741371E376A98000CF3C1 /* HealthHub */ = {
+			isa = PBXGroup;
+			children = (
+				1F97413C1E376B54000CF3C1 /* HubTableViewController.swift */,
+				1F97413A1E376B39000CF3C1 /* HubTableViewCell.swift */,
+				1F97413E1E376B65000CF3C1 /* HubViewController.swift */,
+			);
+			name = HealthHub;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F585F191E1E2B9A00F382BE /* MedSync4.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F585F441E1E2B9A00F382BE /* Build configuration list for PBXNativeTarget "MedSync4.0" */;
+			buildPhases = (
+				1F585F161E1E2B9A00F382BE /* Sources */,
+				1F585F171E1E2B9A00F382BE /* Frameworks */,
+				1F585F181E1E2B9A00F382BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedSync4.0;
+			productName = MedSync4.0;
+			productReference = 1F585F1A1E1E2B9A00F382BE /* MedSync4.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F585F2F1E1E2B9A00F382BE /* MedSync4.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F585F471E1E2B9A00F382BE /* Build configuration list for PBXNativeTarget "MedSync4.0Tests" */;
+			buildPhases = (
+				1F585F2C1E1E2B9A00F382BE /* Sources */,
+				1F585F2D1E1E2B9A00F382BE /* Frameworks */,
+				1F585F2E1E1E2B9A00F382BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F585F321E1E2B9A00F382BE /* PBXTargetDependency */,
+			);
+			name = MedSync4.0Tests;
+			productName = MedSync4.0Tests;
+			productReference = 1F585F301E1E2B9A00F382BE /* MedSync4.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F585F3A1E1E2B9A00F382BE /* MedSync4.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F585F4A1E1E2B9A00F382BE /* Build configuration list for PBXNativeTarget "MedSync4.0UITests" */;
+			buildPhases = (
+				1F585F371E1E2B9A00F382BE /* Sources */,
+				1F585F381E1E2B9A00F382BE /* Frameworks */,
+				1F585F391E1E2B9A00F382BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F585F3D1E1E2B9A00F382BE /* PBXTargetDependency */,
+			);
+			name = MedSync4.0UITests;
+			productName = MedSync4.0UITests;
+			productReference = 1F585F3B1E1E2B9A00F382BE /* MedSync4.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F585F121E1E2B9A00F382BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Danth;
+				TargetAttributes = {
+					1F585F191E1E2B9A00F382BE = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					1F585F2F1E1E2B9A00F382BE = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F585F191E1E2B9A00F382BE;
+					};
+					1F585F3A1E1E2B9A00F382BE = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F585F191E1E2B9A00F382BE;
+					};
+				};
+			};
+			buildConfigurationList = 1F585F151E1E2B9A00F382BE /* Build configuration list for PBXProject "MedSync4.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F585F111E1E2B9A00F382BE;
+			productRefGroup = 1F585F1B1E1E2B9A00F382BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F585F191E1E2B9A00F382BE /* MedSync4.0 */,
+				1F585F2F1E1E2B9A00F382BE /* MedSync4.0Tests */,
+				1F585F3A1E1E2B9A00F382BE /* MedSync4.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F585F181E1E2B9A00F382BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F585F521E1E9F3B00F382BE /* Raleway in Resources */,
+				1F585F2A1E1E2B9A00F382BE /* LaunchScreen.storyboard in Resources */,
+				1F585F271E1E2B9A00F382BE /* Assets.xcassets in Resources */,
+				1F585F251E1E2B9A00F382BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F585F2E1E1E2B9A00F382BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F585F391E1E2B9A00F382BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F585F161E1E2B9A00F382BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F97413B1E376B39000CF3C1 /* HubTableViewCell.swift in Sources */,
+				1F585F4E1E1E2F1A00F382BE /* TabBarViewController.swift in Sources */,
+				1F585F221E1E2B9A00F382BE /* SecondViewController.swift in Sources */,
+				1F585F1E1E1E2B9A00F382BE /* AppDelegate.swift in Sources */,
+				1F636FAC1E1F9A710001D24E /* DocTableViewCell.swift in Sources */,
+				1F97413D1E376B54000CF3C1 /* HubTableViewController.swift in Sources */,
+				1F97413F1E376B65000CF3C1 /* HubViewController.swift in Sources */,
+				1F636FAA1E1F9A500001D24E /* DocTableViewController.swift in Sources */,
+				1F01BAE21E20006C0080FBDB /* DocViewController.swift in Sources */,
+				1F585F201E1E2B9A00F382BE /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F585F2C1E1E2B9A00F382BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F585F351E1E2B9A00F382BE /* MedSync4_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F585F371E1E2B9A00F382BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F585F401E1E2B9A00F382BE /* MedSync4_0UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F585F321E1E2B9A00F382BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F585F191E1E2B9A00F382BE /* MedSync4.0 */;
+			targetProxy = 1F585F311E1E2B9A00F382BE /* PBXContainerItemProxy */;
+		};
+		1F585F3D1E1E2B9A00F382BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F585F191E1E2B9A00F382BE /* MedSync4.0 */;
+			targetProxy = 1F585F3C1E1E2B9A00F382BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F585F231E1E2B9A00F382BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F585F241E1E2B9A00F382BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F585F281E1E2B9A00F382BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F585F291E1E2B9A00F382BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F585F421E1E2B9A00F382BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F585F431E1E2B9A00F382BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F585F451E1E2B9A00F382BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MedSync4.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eddie.MedSync4-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1F585F461E1E2B9A00F382BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MedSync4.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eddie.MedSync4-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1F585F481E1E2B9A00F382BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedSync4.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eddie.MedSync4-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedSync4.0.app/MedSync4.0";
+			};
+			name = Debug;
+		};
+		1F585F491E1E2B9A00F382BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedSync4.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eddie.MedSync4-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedSync4.0.app/MedSync4.0";
+			};
+			name = Release;
+		};
+		1F585F4B1E1E2B9A00F382BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MedSync4.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eddie.MedSync4-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MedSync4.0;
+			};
+			name = Debug;
+		};
+		1F585F4C1E1E2B9A00F382BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MedSync4.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eddie.MedSync4-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MedSync4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F585F151E1E2B9A00F382BE /* Build configuration list for PBXProject "MedSync4.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F585F421E1E2B9A00F382BE /* Debug */,
+				1F585F431E1E2B9A00F382BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F585F441E1E2B9A00F382BE /* Build configuration list for PBXNativeTarget "MedSync4.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F585F451E1E2B9A00F382BE /* Debug */,
+				1F585F461E1E2B9A00F382BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F585F471E1E2B9A00F382BE /* Build configuration list for PBXNativeTarget "MedSync4.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F585F481E1E2B9A00F382BE /* Debug */,
+				1F585F491E1E2B9A00F382BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F585F4A1E1E2B9A00F382BE /* Build configuration list for PBXNativeTarget "MedSync4.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F585F4B1E1E2B9A00F382BE /* Debug */,
+				1F585F4C1E1E2B9A00F382BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F585F121E1E2B9A00F382BE /* Project object */;
+}
