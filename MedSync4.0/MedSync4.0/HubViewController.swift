@@ -31,7 +31,7 @@ class HubViewController: UIViewController {
         detailImageView.image = UIImage(named: sentData2)
         detailDescription.text = sentData3
         scrollView.contentInset = UIEdgeInsetsMake(0, 0, 200, 0)
-        self.navigationItem.title = "My Directory"
+        self.navigationItem.title = "My Health Hub"
         
         
         

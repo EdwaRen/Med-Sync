@@ -11,8 +11,9 @@ import UIKit
 class DocViewController: UIViewController {
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailTitle: UILabel!
-    @IBOutlet weak var detailDescription: UITextView!
+    //@IBOutlet weak var detailDescription: UITextView!
     
+    @IBOutlet weak var detailDescription2: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     
     var sentData1: String!
@@ -25,7 +26,7 @@ class DocViewController: UIViewController {
         
         detailTitle.text = sentData1
         detailImageView.image = UIImage(named: sentData2)
-        detailDescription.text = sentData3
+        detailDescription2.text = sentData3
         scrollView.contentInset = UIEdgeInsetsMake(0, 0, 200, 0)
         self.navigationItem.title = "My Directory"
         
