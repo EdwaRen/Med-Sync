@@ -11,9 +11,9 @@ import UIKit
 class HubViewController: UIViewController {
 
     @IBOutlet weak var detailImageView: UIImageView!
-    @IBOutlet weak var detailDescription: UITextView!
+    //@IBOutlet weak var detailDescription: UITextView!
     
-    @IBOutlet weak var detailTitle: UILabel!
+    //@IBOutlet weak var detailTitle: UILabel!
 
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -27,9 +27,9 @@ class HubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        detailTitle.text = sentData1
+        //detailTitle.text = sentData1
         detailImageView.image = UIImage(named: sentData2)
-        detailDescription.text = sentData3
+        //detailDescription.text = sentData3
         scrollView.contentInset = UIEdgeInsetsMake(0, 0, 200, 0)
         self.navigationItem.title = "My Health Hub"
         

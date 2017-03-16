@@ -9,8 +9,9 @@
 import UIKit
 
 class HubTableViewController: UITableViewController {
-    var imageList = ["Reports.png","Inbox.png","Profile.png","Dots3.png"]
-    
+    var imageList = ["TestReport.jpg","TestReport.jpg","TestReport.jpg","TestReport.jpg"]
+    var imageList2 = ["Report2.png","Report2.png","Report2.png","Report2.png"]
+
     var titleList = ["Reports", "Inbox", "My Profile", "Other"]
     
     var descriptionList = ["a", "b", "c", "d"]
@@ -52,7 +53,7 @@ class HubTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath) as! HubTableViewCell
         
         cell.cellTitle.text = titleList[indexPath.row]
-        cell.cellImageView.image = UIImage(named: imageList[indexPath.row])
+        cell.cellImageView.image = UIImage(named: imageList2[indexPath.row])
         
         
         // Configure the cell...
