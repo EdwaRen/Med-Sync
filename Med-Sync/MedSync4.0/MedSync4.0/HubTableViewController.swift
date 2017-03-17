@@ -9,10 +9,10 @@
 import UIKit
 
 class HubTableViewController: UITableViewController {
-    var imageList = ["TestReport.jpg","TestReport.jpg","TestReport.jpg","TestReport.jpg"]
-    var imageList2 = ["Report2.png","Report2.png","Report2.png","Report2.png"]
+    var imageList = ["TestReport.jpg","TestReport.jpg","TestReport.jpg","TestReport.jpg", "TestReport.jpg","TestReport.jpg","TestReport.jpg","TestReport.jpg", "TestReport.jpg","TestReport.jpg","TestReport.jpg","TestReport.jpg"]
+    var imageList2 = ["Report2.png","Report2.png","Report2.png","Report2.png", "Report2.png","Report2.png","Report2.png","Report2.png", "Report2.png","Report2.png","Report2.png","Report2.png"]
 
-    var titleList = ["Reports", "Inbox", "My Profile", "Other"]
+    var titleList = ["January Health Report", "February Health Report", "March Health Report", "April Health Report", "May Health Report", "June Health Report", "July Health Report", "August Health Report", "September Health Report", "October Health Report", "November Health Report", "December Health Report"]
     
     var descriptionList = ["a", "b", "c", "d"]
     
