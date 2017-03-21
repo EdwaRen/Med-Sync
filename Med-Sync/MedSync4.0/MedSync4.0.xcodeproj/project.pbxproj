@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F01BAE21E20006C0080FBDB /* DocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01BAE11E20006C0080FBDB /* DocViewController.swift */; };
 		1F2D64DD1E7C53F300CFEBEE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */; };
+		1F2D64E31E80C95B00CFEBEE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */; };
 		1F585F1E1E1E2B9A00F382BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F1D1E1E2B9A00F382BE /* AppDelegate.swift */; };
 		1F585F201E1E2B9A00F382BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F1F1E1E2B9A00F382BE /* FirstViewController.swift */; };
 		1F585F221E1E2B9A00F382BE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F211E1E2B9A00F382BE /* SecondViewController.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		1F01BAE11E20006C0080FBDB /* DocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocViewController.swift; sourceTree = "<group>"; };
 		1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		1F585F1A1E1E2B9A00F382BE /* MedSync4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedSync4.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F585F1D1E1E2B9A00F382BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F585F1F1E1E2B9A00F382BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2D64DE1E80C8D000CFEBEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1F2D64DF1E80C8FD00CFEBEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1F2D64E01E80C90C00CFEBEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1F2D64E11E80C92C00CFEBEE /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
 		1F585F111E1E2B9A00F382BE = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +151,10 @@
 				1F9741371E376A98000CF3C1 /* HealthHub */,
 				1F636FA81E1F9A1E0001D24E /* Doctors */,
 				1F585F1D1E1E2B9A00F382BE /* AppDelegate.swift */,
+				1F2D64E11E80C92C00CFEBEE /* Plugins */,
+				1F2D64DF1E80C8FD00CFEBEE /* View */,
+				1F2D64E01E80C90C00CFEBEE /* Controller */,
+				1F2D64DE1E80C8D000CFEBEE /* Model */,
 				1F585F1F1E1E2B9A00F382BE /* FirstViewController.swift */,
 				1F585F211E1E2B9A00F382BE /* SecondViewController.swift */,
 				1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */,
@@ -308,6 +343,7 @@
 			files = (
 				1F97413B1E376B39000CF3C1 /* HubTableViewCell.swift in Sources */,
 				1F585F4E1E1E2F1A00F382BE /* TabBarViewController.swift in Sources */,
+				1F2D64E31E80C95B00CFEBEE /* SignInVC.swift in Sources */,
 				1F585F221E1E2B9A00F382BE /* SecondViewController.swift in Sources */,
 				1F585F1E1E1E2B9A00F382BE /* AppDelegate.swift in Sources */,
 				1F636FAC1E1F9A710001D24E /* DocTableViewCell.swift in Sources */,
