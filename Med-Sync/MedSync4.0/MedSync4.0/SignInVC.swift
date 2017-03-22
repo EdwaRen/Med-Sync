@@ -10,6 +10,11 @@ import UIKit
 
 class SignInVC: UIViewController {
 
+    private let CONTACT_SEGUE = "ContactsSegue";
+    
+  
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +25,13 @@ class SignInVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func login(_ sender: Any) {
+        performSegue(withIdentifier: CONTACT_SEGUE, sender: nil)
+        
+    }
     
+    @IBAction func signUp(_ sender: Any) {
+    }
 
 
 }

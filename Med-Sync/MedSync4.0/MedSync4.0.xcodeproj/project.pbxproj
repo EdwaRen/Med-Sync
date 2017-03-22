@@ -10,6 +10,7 @@
 		1F01BAE21E20006C0080FBDB /* DocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01BAE11E20006C0080FBDB /* DocViewController.swift */; };
 		1F2D64DD1E7C53F300CFEBEE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */; };
 		1F2D64E31E80C95B00CFEBEE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */; };
+		1F2D64E51E811F7B00CFEBEE /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64E41E811F7B00CFEBEE /* ContactsVC.swift */; };
 		1F585F1E1E1E2B9A00F382BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F1D1E1E2B9A00F382BE /* AppDelegate.swift */; };
 		1F585F201E1E2B9A00F382BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F1F1E1E2B9A00F382BE /* FirstViewController.swift */; };
 		1F585F221E1E2B9A00F382BE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F585F211E1E2B9A00F382BE /* SecondViewController.swift */; };
@@ -48,6 +49,7 @@
 		1F01BAE11E20006C0080FBDB /* DocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocViewController.swift; sourceTree = "<group>"; };
 		1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		1F2D64E41E811F7B00CFEBEE /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		1F585F1A1E1E2B9A00F382BE /* MedSync4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedSync4.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F585F1D1E1E2B9A00F382BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F585F1F1E1E2B9A00F382BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */,
+				1F2D64E41E811F7B00CFEBEE /* ContactsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				1F585F221E1E2B9A00F382BE /* SecondViewController.swift in Sources */,
 				1F585F1E1E1E2B9A00F382BE /* AppDelegate.swift in Sources */,
 				1F636FAC1E1F9A710001D24E /* DocTableViewCell.swift in Sources */,
+				1F2D64E51E811F7B00CFEBEE /* ContactsVC.swift in Sources */,
 				1F97413D1E376B54000CF3C1 /* HubTableViewController.swift in Sources */,
 				1F97413F1E376B65000CF3C1 /* HubViewController.swift in Sources */,
 				1F636FAA1E1F9A500001D24E /* DocTableViewController.swift in Sources */,
