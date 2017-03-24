@@ -280,6 +280,7 @@
 				TargetAttributes = {
 					1F585F191E1E2B9A00F382BE = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4BA7JNM5VD;
 						ProvisioningStyle = Automatic;
 					};
 					1F585F2F1E1E2B9A00F382BE = {
@@ -510,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BA7JNM5VD;
 				INFOPLIST_FILE = MedSync4.0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -523,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BA7JNM5VD;
 				INFOPLIST_FILE = MedSync4.0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
