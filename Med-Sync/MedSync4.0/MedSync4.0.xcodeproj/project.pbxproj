@@ -27,6 +27,9 @@
 		1F97413B1E376B39000CF3C1 /* HubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413A1E376B39000CF3C1 /* HubTableViewCell.swift */; };
 		1F97413D1E376B54000CF3C1 /* HubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413C1E376B54000CF3C1 /* HubTableViewController.swift */; };
 		1F97413F1E376B65000CF3C1 /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413E1E376B65000CF3C1 /* HubViewController.swift */; };
+		4428A300C91A8464D97834D4 /* Pods_MedSync4_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC0ACDD6F47EE3D626394CE /* Pods_MedSync4_0.framework */; };
+		740A77B5C8EE2E860449F70E /* Pods_MedSync4_0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59164CD4E1AB025352BA36F0 /* Pods_MedSync4_0UITests.framework */; };
+		A51838821B77EE6D626D43A6 /* Pods_MedSync4_0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D516CB0244EF6C624CA60927 /* Pods_MedSync4_0Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02352108BB9ED80B8C6F05C0 /* Pods-MedSync4.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSync4.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedSync4.0/Pods-MedSync4.0.release.xcconfig"; sourceTree = "<group>"; };
+		160F2BED2F5F7B25913171D4 /* Pods-MedSync4.0UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSync4.0UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedSync4.0UITests/Pods-MedSync4.0UITests.release.xcconfig"; sourceTree = "<group>"; };
 		1F01BAE11E20006C0080FBDB /* DocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocViewController.swift; sourceTree = "<group>"; };
 		1F079F2A1E84A7740000888C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +78,13 @@
 		1F97413A1E376B39000CF3C1 /* HubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubTableViewCell.swift; sourceTree = "<group>"; };
 		1F97413C1E376B54000CF3C1 /* HubTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubTableViewController.swift; sourceTree = "<group>"; };
 		1F97413E1E376B65000CF3C1 /* HubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
+		29DDFE6BF21EF10198F865E0 /* Pods-MedSync4.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSync4.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedSync4.0/Pods-MedSync4.0.debug.xcconfig"; sourceTree = "<group>"; };
+		59164CD4E1AB025352BA36F0 /* Pods_MedSync4_0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedSync4_0UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC0ACDD6F47EE3D626394CE /* Pods_MedSync4_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedSync4_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FC6060A1DB0F0F5764A660 /* Pods-MedSync4.0Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSync4.0Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedSync4.0Tests/Pods-MedSync4.0Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C421977D6CDD93BB41EE9F9B /* Pods-MedSync4.0Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSync4.0Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedSync4.0Tests/Pods-MedSync4.0Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4068A4126C47ED125ED2635 /* Pods-MedSync4.0UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSync4.0UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedSync4.0UITests/Pods-MedSync4.0UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D516CB0244EF6C624CA60927 /* Pods_MedSync4_0Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedSync4_0Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4428A300C91A8464D97834D4 /* Pods_MedSync4_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51838821B77EE6D626D43A6 /* Pods_MedSync4_0Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740A77B5C8EE2E860449F70E /* Pods_MedSync4_0UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +152,8 @@
 				1F585F331E1E2B9A00F382BE /* MedSync4.0Tests */,
 				1F585F3E1E1E2B9A00F382BE /* MedSync4.0UITests */,
 				1F585F1B1E1E2B9A00F382BE /* Products */,
+				6BDC4C3DF265DD4E4D0706FB /* Pods */,
+				2D77FD8252D7F69F8262AFEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +229,29 @@
 			name = HealthHub;
 			sourceTree = "<group>";
 		};
+		2D77FD8252D7F69F8262AFEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FC0ACDD6F47EE3D626394CE /* Pods_MedSync4_0.framework */,
+				D516CB0244EF6C624CA60927 /* Pods_MedSync4_0Tests.framework */,
+				59164CD4E1AB025352BA36F0 /* Pods_MedSync4_0UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BDC4C3DF265DD4E4D0706FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29DDFE6BF21EF10198F865E0 /* Pods-MedSync4.0.debug.xcconfig */,
+				02352108BB9ED80B8C6F05C0 /* Pods-MedSync4.0.release.xcconfig */,
+				C421977D6CDD93BB41EE9F9B /* Pods-MedSync4.0Tests.debug.xcconfig */,
+				65FC6060A1DB0F0F5764A660 /* Pods-MedSync4.0Tests.release.xcconfig */,
+				D4068A4126C47ED125ED2635 /* Pods-MedSync4.0UITests.debug.xcconfig */,
+				160F2BED2F5F7B25913171D4 /* Pods-MedSync4.0UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F585F441E1E2B9A00F382BE /* Build configuration list for PBXNativeTarget "MedSync4.0" */;
 			buildPhases = (
+				F9F06D400F0717D797B7D22C /* [CP] Check Pods Manifest.lock */,
 				1F585F161E1E2B9A00F382BE /* Sources */,
 				1F585F171E1E2B9A00F382BE /* Frameworks */,
 				1F585F181E1E2B9A00F382BE /* Resources */,
+				DA2FFDF22C3FA9D972E234E5 /* [CP] Embed Pods Frameworks */,
+				064CBB1E5F6264EDF632F213 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F585F471E1E2B9A00F382BE /* Build configuration list for PBXNativeTarget "MedSync4.0Tests" */;
 			buildPhases = (
+				EE9199F45520C0DB37E3074F /* [CP] Check Pods Manifest.lock */,
 				1F585F2C1E1E2B9A00F382BE /* Sources */,
 				1F585F2D1E1E2B9A00F382BE /* Frameworks */,
 				1F585F2E1E1E2B9A00F382BE /* Resources */,
+				9F2BEDBDB9A3B8C1747FDF06 /* [CP] Embed Pods Frameworks */,
+				A5E6926AC9C841E39F10CE0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F585F4A1E1E2B9A00F382BE /* Build configuration list for PBXNativeTarget "MedSync4.0UITests" */;
 			buildPhases = (
+				581318B8D0AB283BDC594C23 /* [CP] Check Pods Manifest.lock */,
 				1F585F371E1E2B9A00F382BE /* Sources */,
 				1F585F381E1E2B9A00F382BE /* Frameworks */,
 				1F585F391E1E2B9A00F382BE /* Resources */,
+				BD3673865883250BD19410C1 /* [CP] Embed Pods Frameworks */,
+				F1A52ACC5E0B0A7FD896FA5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,6 +392,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		064CBB1E5F6264EDF632F213 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedSync4.0/Pods-MedSync4.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		581318B8D0AB283BDC594C23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2BEDBDB9A3B8C1747FDF06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedSync4.0Tests/Pods-MedSync4.0Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5E6926AC9C841E39F10CE0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedSync4.0Tests/Pods-MedSync4.0Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD3673865883250BD19410C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedSync4.0UITests/Pods-MedSync4.0UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA2FFDF22C3FA9D972E234E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedSync4.0/Pods-MedSync4.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE9199F45520C0DB37E3074F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A52ACC5E0B0A7FD896FA5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedSync4.0UITests/Pods-MedSync4.0UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F06D400F0717D797B7D22C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F585F161E1E2B9A00F382BE /* Sources */ = {
@@ -509,6 +696,7 @@
 		};
 		1F585F451E1E2B9A00F382BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29DDFE6BF21EF10198F865E0 /* Pods-MedSync4.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4BA7JNM5VD;
@@ -523,6 +711,7 @@
 		};
 		1F585F461E1E2B9A00F382BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02352108BB9ED80B8C6F05C0 /* Pods-MedSync4.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4BA7JNM5VD;
@@ -537,6 +726,7 @@
 		};
 		1F585F481E1E2B9A00F382BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C421977D6CDD93BB41EE9F9B /* Pods-MedSync4.0Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -551,6 +741,7 @@
 		};
 		1F585F491E1E2B9A00F382BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65FC6060A1DB0F0F5764A660 /* Pods-MedSync4.0Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -565,6 +756,7 @@
 		};
 		1F585F4B1E1E2B9A00F382BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4068A4126C47ED125ED2635 /* Pods-MedSync4.0UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MedSync4.0UITests/Info.plist;
@@ -578,6 +770,7 @@
 		};
 		1F585F4C1E1E2B9A00F382BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 160F2BED2F5F7B25913171D4 /* Pods-MedSync4.0UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MedSync4.0UITests/Info.plist;
