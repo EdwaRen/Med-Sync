@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F01BAE21E20006C0080FBDB /* DocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01BAE11E20006C0080FBDB /* DocViewController.swift */; };
+		1F079F2B1E84A7740000888C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F079F2A1E84A7740000888C /* GoogleService-Info.plist */; };
 		1F2D64DD1E7C53F300CFEBEE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */; };
 		1F2D64E31E80C95B00CFEBEE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */; };
 		1F2D64E51E811F7B00CFEBEE /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64E41E811F7B00CFEBEE /* ContactsVC.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		1F01BAE11E20006C0080FBDB /* DocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocViewController.swift; sourceTree = "<group>"; };
+		1F079F2A1E84A7740000888C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		1F2D64E41E811F7B00CFEBEE /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		1F585F1C1E1E2B9A00F382BE /* MedSync4.0 */ = {
 			isa = PBXGroup;
 			children = (
+				1F079F2A1E84A7740000888C /* GoogleService-Info.plist */,
 				1F9741371E376A98000CF3C1 /* HealthHub */,
 				1F636FA81E1F9A1E0001D24E /* Doctors */,
 				1F585F1D1E1E2B9A00F382BE /* AppDelegate.swift */,
@@ -318,6 +321,7 @@
 			files = (
 				1F585F521E1E9F3B00F382BE /* Raleway in Resources */,
 				1F585F2A1E1E2B9A00F382BE /* LaunchScreen.storyboard in Resources */,
+				1F079F2B1E84A7740000888C /* GoogleService-Info.plist in Resources */,
 				1F585F271E1E2B9A00F382BE /* Assets.xcassets in Resources */,
 				1F585F251E1E2B9A00F382BE /* Main.storyboard in Resources */,
 			);
