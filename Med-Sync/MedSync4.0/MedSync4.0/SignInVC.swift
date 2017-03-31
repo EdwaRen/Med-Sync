@@ -27,7 +27,7 @@ class SignInVC: UIViewController {
     }
     @IBAction func login(_ sender: Any) {
         //performSegue(withIdentifier: CONTACT_SEGUE, sender: nil)
-        
+
         if emailTextField.text != "" && passwordTextField.text != "" {
             AuthProvider.Instance.login(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: { (message) in
                 
@@ -35,6 +35,8 @@ class SignInVC: UIViewController {
                     self.alertTheUser(title: "Problem with authentication", message: message!)
                 } else {
                     print("LOGIN COMPLETE")
+                    //performSegue(withIdentifier: CONTACT_SEGUE, sender: nil)
+
                 }
                 
             })
