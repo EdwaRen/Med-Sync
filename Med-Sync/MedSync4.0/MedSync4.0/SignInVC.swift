@@ -26,42 +26,26 @@ class SignInVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func login(_ sender: Any) {
-        //performSegue(withIdentifier: CONTACT_SEGUE, sender: nil)
+        performSegue(withIdentifier: CONTACT_SEGUE, sender: nil)
 
         if emailTextField.text != "" && passwordTextField.text != "" {
             AuthProvider.Instance.login(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: { (message) in
                 
                 if message != nil {
-                    self.alertTheUser(title: "Problem with authentication", message: message!)
+                    self.alertTheUser(title: "Problem With Authentication", message: message!)
                 } else {
+                    self.emailTextField.text = "";
+                    self.passwordTextField.text = "";
+
                     print("LOGIN COMPLETE")
-                    //performSegue(withIdentifier: CONTACT_SEGUE, sender: nil)
+                    //performSegue(withIdentifier: "ContactsSegue", sender: nil);
 
                 }
                 
             })
+        } else {
+            alertTheUser(title: "Email And Password Are Required", message: "Please enter email and password in the text fields");
         }
-        
-        /*
-        if emailTextField.text != "" && passwordTextField.text != "" {
-            FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
-                if error != nil {
-                    FIRAuth.auth()?.createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error1) in
-                        if error1 != nil {
-                            
-                        } else{
-                            if user?.uid != nil {
-                                
-                            }
-                        }
-                    })
-                } else {
-                    //performSegue(withIdentifier: CONTACT_SEGUE, sender: nil)
-                    print("We are logged in");
-                }
-            })
-        }
- */
         
     }
     
