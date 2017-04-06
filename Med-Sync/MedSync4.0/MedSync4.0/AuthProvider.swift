@@ -40,6 +40,29 @@ class AuthProvider {
         })
     } // login func
     
+    func signUp(withEmail: String, password: String, loginHandler: LoginHandler?) {
+        
+        FIRAuth.auth()?.createUser(withEmail: withEmail, password: password, completion: { (user, error) in
+            
+            if error != nil {
+                self.handlerError(err: error as! NSError, loginHandler: loginHandler);
+                
+            } else {
+                if user?.uid != nil {
+                    //store user to database
+                    
+                    //log in the user
+                    self.login(withEmail: withEmail, password: password, loginHandler: loginHandler);
+                    
+                    
+                }
+            }
+            
+            
+        })
+        
+    }//signup function
+    
     private func handlerError(err: NSError, loginHandler: LoginHandler?) {
         
         if let errCode = FIRAuthErrorCode(rawValue: err.code) {

@@ -26,9 +26,11 @@ class SignInVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func login(_ sender: Any) {
-        performSegue(withIdentifier: CONTACT_SEGUE, sender: nil)
+        //performSegue(withIdentifier: CONTACT_SEGUE, sender: nil)
 
         if emailTextField.text != "" && passwordTextField.text != "" {
+            //performSegue(withIdentifier: "ContactsSegue", sender: nil);
+
             AuthProvider.Instance.login(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: { (message) in
                 
                 if message != nil {
@@ -50,6 +52,26 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
+        
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            
+            AuthProvider.Instance.signUp(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: { (message) in
+                
+                if message != nil {
+                    self.alertTheUser(title: "Problem With Creating A New User", message: message);
+                } else {
+                    print("CREATED USER")
+                }
+                
+            })
+            
+            
+        } else {
+            alertTheUser(title: "Email And Password Are Required", message: "Please enter email and password in the text fields");
+        }
+        
+        
+        
     }
     
     private func alertTheUser(title: String, message: String) {
