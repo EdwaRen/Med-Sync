@@ -58,9 +58,13 @@ class SignInVC: UIViewController {
             AuthProvider.Instance.signUp(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: { (message) in
                 
                 if message != nil {
-                    self.alertTheUser(title: "Problem With Creating A New User", message: message);
+                    self.alertTheUser(title: "Problem With Creating A New User", message: message!);
                 } else {
-                    print("CREATED USER")
+                    self.emailTextField.text = "";
+                    self.passwordTextField.text = "";
+                    self.performSegue(withIdentifier: self.CONTACT_SEGUE, sender: nil);
+                    
+                    print("CREATED USER");
                 }
                 
             })
