@@ -51,6 +51,8 @@ class AuthProvider {
                 if user?.uid != nil {
                     //store user to database
                     
+                    DBProvider.Instance.saveUser(withID: user!.uid, email: withEmail, password: password);
+                    
                     //log in the user
                     self.login(withEmail: withEmail, password: password, loginHandler: loginHandler);
                     
@@ -62,6 +64,24 @@ class AuthProvider {
         })
         
     }//signup function
+    func isLoggedIn() -> Bool {
+        if FIRAuth.auth()?.currentUser != nil {
+            return true;
+        }
+        return true;
+    }
+    
+    func logOut() -> Bool {
+        if FIRAuth.auth()?.currentUser != nil {
+            do {
+                try FIRAuth.auth()?.signOut();
+                return true;
+            } catch  {
+                return false;
+            }
+        }
+        return true;
+    }
     
     private func handlerError(err: NSError, loginHandler: LoginHandler?) {
         
