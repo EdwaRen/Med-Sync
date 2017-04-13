@@ -8,18 +8,29 @@
 
 import UIKit
 
-class ContactsVC: UIViewController {
+class ContactsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var myTable: UITableView!
+    
+    private var contacts = [Contact]();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
     }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return contacts.count;
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath);
+        cell.textLabel?.text = "This Works";
+        return cell;
+    }
+
     
     @IBAction func logout(_ sender: Any) {
         dismiss(animated: true, completion: nil);

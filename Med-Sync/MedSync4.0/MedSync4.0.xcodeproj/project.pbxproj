@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F01BAE21E20006C0080FBDB /* DocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01BAE11E20006C0080FBDB /* DocViewController.swift */; };
 		1F079F2B1E84A7740000888C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F079F2A1E84A7740000888C /* GoogleService-Info.plist */; };
+		1F1645B61E9F1F7300CA637C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1645B51E9F1F7300CA637C /* Contact.swift */; };
 		1F2D64DD1E7C53F300CFEBEE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */; };
 		1F2D64E31E80C95B00CFEBEE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */; };
 		1F2D64E51E811F7B00CFEBEE /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D64E41E811F7B00CFEBEE /* ContactsVC.swift */; };
@@ -57,6 +58,7 @@
 		160F2BED2F5F7B25913171D4 /* Pods-MedSync4.0UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSync4.0UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedSync4.0UITests/Pods-MedSync4.0UITests.release.xcconfig"; sourceTree = "<group>"; };
 		1F01BAE11E20006C0080FBDB /* DocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocViewController.swift; sourceTree = "<group>"; };
 		1F079F2A1E84A7740000888C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F1645B51E9F1F7300CA637C /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		1F2D64DC1E7C53F300CFEBEE /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		1F2D64E41E811F7B00CFEBEE /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				1FBF80711E9C6D4900A72444 /* Constants.swift */,
+				1F1645B51E9F1F7300CA637C /* Contact.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 			files = (
 				1F97413B1E376B39000CF3C1 /* HubTableViewCell.swift in Sources */,
 				1F585F4E1E1E2F1A00F382BE /* TabBarViewController.swift in Sources */,
+				1F1645B61E9F1F7300CA637C /* Contact.swift in Sources */,
 				1F2D64E31E80C95B00CFEBEE /* SignInVC.swift in Sources */,
 				1F585F221E1E2B9A00F382BE /* SecondViewController.swift in Sources */,
 				1F53A2761E89F1990091FF94 /* AuthProvider.swift in Sources */,

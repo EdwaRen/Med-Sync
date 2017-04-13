@@ -68,7 +68,7 @@ class AuthProvider {
         if FIRAuth.auth()?.currentUser != nil {
             return true;
         }
-        return true;
+        return false;
     }
     
     func logOut() -> Bool {
