@@ -10,6 +10,8 @@ import UIKit
 
 class ContactsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    //@IBOutlet weak var myTable: UITableView!
+    
     @IBOutlet weak var myTable: UITableView!
     
     private var contacts = [Contact]();
@@ -31,7 +33,15 @@ class ContactsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell;
     }
 
-    
+    @IBAction func logout(_ sender: Any) {
+        dismiss(animated: true, completion: nil);
+        if AuthProvider.Instance.logOut() {
+            dismiss(animated: true, completion: nil);
+        } else {
+            alertTheUser(title: "Could Not Log Out", message: "We could not log out at the moment. Please try again.");
+        }
+    }
+    /*
     @IBAction func logout(_ sender: Any) {
         dismiss(animated: true, completion: nil);
         if AuthProvider.Instance.logOut() {
@@ -41,7 +51,7 @@ class ContactsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
     }
-    
+    */
     private func alertTheUser(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert);
         let ok = UIAlertAction(title: "OK", style: .default, handler: nil);
