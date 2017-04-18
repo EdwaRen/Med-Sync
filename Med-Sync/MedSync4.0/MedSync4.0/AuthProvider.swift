@@ -22,6 +22,7 @@ struct LoginErrorCode {
 
 class AuthProvider {
     private static let _instance = AuthProvider();
+    var userName = ""
     static var Instance: AuthProvider {
         return _instance;
     }
@@ -30,7 +31,7 @@ class AuthProvider {
         FIRAuth.auth()?.signIn(withEmail: withEmail, password: password, completion: { (user, error) in
             
             if error != nil {
-                self.handlerError(err: error as! NSError, loginHandler: loginHandler);
+                self.handlerError(err: error! as NSError, loginHandler: loginHandler);
             } else {
                 loginHandler?(nil);
             }
@@ -41,11 +42,11 @@ class AuthProvider {
     } // login func
     
     func signUp(withEmail: String, password: String, loginHandler: LoginHandler?) {
-        
+       
         FIRAuth.auth()?.createUser(withEmail: withEmail, password: password, completion: { (user, error) in
             
             if error != nil {
-                self.handlerError(err: error as! NSError, loginHandler: loginHandler);
+                self.handlerError(err: error! as NSError, loginHandler: loginHandler);
                 
             } else {
                 if user?.uid != nil {
@@ -81,6 +82,10 @@ class AuthProvider {
             }
         }
         return true;
+    }
+    
+    func userID() -> String {
+        return (FIRAuth.auth()!.currentUser?.uid)!;
     }
     
     private func handlerError(err: NSError, loginHandler: LoginHandler?) {

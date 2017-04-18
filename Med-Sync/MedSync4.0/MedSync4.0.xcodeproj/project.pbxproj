@@ -29,7 +29,8 @@
 		1F97413B1E376B39000CF3C1 /* HubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413A1E376B39000CF3C1 /* HubTableViewCell.swift */; };
 		1F97413D1E376B54000CF3C1 /* HubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413C1E376B54000CF3C1 /* HubTableViewController.swift */; };
 		1F97413F1E376B65000CF3C1 /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413E1E376B65000CF3C1 /* HubViewController.swift */; };
-		1FA8E4FA1EA5686300816002 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8E4F91EA5686300816002 /* ChatVC.swift */; };
+		1FA8E4FE1EA5A1CB00816002 /* Chat2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8E4FD1EA5A1CB00816002 /* Chat2VC.swift */; };
+		1FA8E5001EA5D51700816002 /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8E4FF1EA5D51700816002 /* MessagesHandler.swift */; };
 		1FBDAD6F1E9B685100EF5283 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBDAD6E1E9B685100EF5283 /* DBProvider.swift */; };
 		1FBF80721E9C6D4900A72444 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF80711E9C6D4900A72444 /* Constants.swift */; };
 		4428A300C91A8464D97834D4 /* Pods_MedSync4_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC0ACDD6F47EE3D626394CE /* Pods_MedSync4_0.framework */; };
@@ -85,7 +86,8 @@
 		1F97413A1E376B39000CF3C1 /* HubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubTableViewCell.swift; sourceTree = "<group>"; };
 		1F97413C1E376B54000CF3C1 /* HubTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubTableViewController.swift; sourceTree = "<group>"; };
 		1F97413E1E376B65000CF3C1 /* HubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
-		1FA8E4F91EA5686300816002 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		1FA8E4FD1EA5A1CB00816002 /* Chat2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat2VC.swift; sourceTree = "<group>"; };
+		1FA8E4FF1EA5D51700816002 /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
 		1FBDAD6E1E9B685100EF5283 /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
 		1FBF80711E9C6D4900A72444 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		29DDFE6BF21EF10198F865E0 /* Pods-MedSync4.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSync4.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedSync4.0/Pods-MedSync4.0.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,9 +146,9 @@
 		1F2D64E01E80C90C00CFEBEE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1FA8E4F91EA5686300816002 /* ChatVC.swift */,
 				1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */,
 				1F2D64E41E811F7B00CFEBEE /* ContactsVC.swift */,
+				1FA8E4FD1EA5A1CB00816002 /* Chat2VC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -156,6 +158,7 @@
 			children = (
 				1F53A2751E89F1990091FF94 /* AuthProvider.swift */,
 				1FBDAD6E1E9B685100EF5283 /* DBProvider.swift */,
+				1FA8E4FF1EA5D51700816002 /* MessagesHandler.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -551,7 +554,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA8E4FA1EA5686300816002 /* ChatVC.swift in Sources */,
 				1F97413B1E376B39000CF3C1 /* HubTableViewCell.swift in Sources */,
 				1F585F4E1E1E2F1A00F382BE /* TabBarViewController.swift in Sources */,
 				1F1645B61E9F1F7300CA637C /* Contact.swift in Sources */,
@@ -564,6 +566,8 @@
 				1FBDAD6F1E9B685100EF5283 /* DBProvider.swift in Sources */,
 				1F2D64E51E811F7B00CFEBEE /* ContactsVC.swift in Sources */,
 				1F97413D1E376B54000CF3C1 /* HubTableViewController.swift in Sources */,
+				1FA8E5001EA5D51700816002 /* MessagesHandler.swift in Sources */,
+				1FA8E4FE1EA5A1CB00816002 /* Chat2VC.swift in Sources */,
 				1F97413F1E376B65000CF3C1 /* HubViewController.swift in Sources */,
 				1F636FAA1E1F9A500001D24E /* DocTableViewController.swift in Sources */,
 				1F2D64DD1E7C53F300CFEBEE /* ThirdViewController.swift in Sources */,

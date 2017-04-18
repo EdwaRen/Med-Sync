@@ -70,8 +70,11 @@ class DBProvider {
                         if let email = contactData[Constants.EMAIL] as? String {
                             
                             let id = key as! String;
-                            let newContact = Contact(id: id, name: email);
-                            contacts.append(newContact);
+                            
+                            if id != AuthProvider.Instance.userID() {
+                                let newContact = Contact(id: id, name: email);
+                                contacts.append(newContact);
+                            }
                             
                             
                             
@@ -84,7 +87,7 @@ class DBProvider {
         }
         //return con
         
-    }
+    } //Uses logic gates before creating a list of contacts (code form) to be displayed
     
 }
 
