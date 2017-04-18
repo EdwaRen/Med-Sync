@@ -29,6 +29,7 @@
 		1F97413B1E376B39000CF3C1 /* HubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413A1E376B39000CF3C1 /* HubTableViewCell.swift */; };
 		1F97413D1E376B54000CF3C1 /* HubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413C1E376B54000CF3C1 /* HubTableViewController.swift */; };
 		1F97413F1E376B65000CF3C1 /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97413E1E376B65000CF3C1 /* HubViewController.swift */; };
+		1FA8E4FA1EA5686300816002 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8E4F91EA5686300816002 /* ChatVC.swift */; };
 		1FBDAD6F1E9B685100EF5283 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBDAD6E1E9B685100EF5283 /* DBProvider.swift */; };
 		1FBF80721E9C6D4900A72444 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF80711E9C6D4900A72444 /* Constants.swift */; };
 		4428A300C91A8464D97834D4 /* Pods_MedSync4_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC0ACDD6F47EE3D626394CE /* Pods_MedSync4_0.framework */; };
@@ -84,6 +85,7 @@
 		1F97413A1E376B39000CF3C1 /* HubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubTableViewCell.swift; sourceTree = "<group>"; };
 		1F97413C1E376B54000CF3C1 /* HubTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubTableViewController.swift; sourceTree = "<group>"; };
 		1F97413E1E376B65000CF3C1 /* HubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
+		1FA8E4F91EA5686300816002 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		1FBDAD6E1E9B685100EF5283 /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
 		1FBF80711E9C6D4900A72444 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		29DDFE6BF21EF10198F865E0 /* Pods-MedSync4.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedSync4.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedSync4.0/Pods-MedSync4.0.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		1F2D64E01E80C90C00CFEBEE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1FA8E4F91EA5686300816002 /* ChatVC.swift */,
 				1F2D64E21E80C95B00CFEBEE /* SignInVC.swift */,
 				1F2D64E41E811F7B00CFEBEE /* ContactsVC.swift */,
 			);
@@ -548,6 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA8E4FA1EA5686300816002 /* ChatVC.swift in Sources */,
 				1F97413B1E376B39000CF3C1 /* HubTableViewCell.swift in Sources */,
 				1F585F4E1E1E2F1A00F382BE /* TabBarViewController.swift in Sources */,
 				1F1645B61E9F1F7300CA637C /* Contact.swift in Sources */,
