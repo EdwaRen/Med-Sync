@@ -37,6 +37,11 @@ class DBProvider {
     var messagesRef: FIRDatabaseReference {
         return dbRef.child(Constants.MEDIA_MESSAGES);
     }
+    var mediaMessagesRef: FIRDatabaseReference {
+        return dbRef.child(Constants.MEDIA_MESSAGES);
+    }
+    
+    
     
     var storageRef: FIRStorageReference {
         return FIRStorage.storage().reference(forURL: "gs://myawesomechat-c4734.appspot.com");

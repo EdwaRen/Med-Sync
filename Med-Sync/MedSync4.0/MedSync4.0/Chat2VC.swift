@@ -10,6 +10,7 @@ import UIKit
 import JSQMessagesViewController
 import MobileCoreServices
 import AVKit
+import SDWebImage
 
 
 class Chat2VC: JSQMessagesViewController, MessageReceivedDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -28,6 +29,7 @@ class Chat2VC: JSQMessagesViewController, MessageReceivedDelegate, UIImagePicker
         self.senderDisplayName = AuthProvider.Instance.userName;
         
         MessagesHandler.Instance.observeMessages();
+        MessagesHandler.Instance.observeMediaMessages();
         
         // Do any additional setup after loading the view.
     }
@@ -37,8 +39,18 @@ class Chat2VC: JSQMessagesViewController, MessageReceivedDelegate, UIImagePicker
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
         
         let bubbleFactory = JSQMessagesBubbleImageFactory();
+        let message = messages[indexPath.item];
+        
+        if message.senderId == self.senderId {
+            return bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.blue);
+        } else {
+            return bubbleFactory?.incomingMessagesBubbleImage(with: UIColor.blue);
+        }
+        
         //let message = messages[indexPath.item];
         return bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.blue);
+        
+        
         
         //Blue background for text messages
     }
@@ -86,8 +98,8 @@ class Chat2VC: JSQMessagesViewController, MessageReceivedDelegate, UIImagePicker
         
         MessagesHandler.Instance.sendMessage(senderID: senderId, senderName: senderDisplayName, text: text);
         
-        messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text));
-        collectionView.reloadData();
+        //messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, text: text));
+        //collectionView.reloadData();
         
         //This will remove text from the text field
         finishSendingMessage();
@@ -134,14 +146,15 @@ class Chat2VC: JSQMessagesViewController, MessageReceivedDelegate, UIImagePicker
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let pic = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            let img = JSQPhotoMediaItem(image:pic);
-            self.messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, media: img));
+            
+            let data = UIImageJPEGRepresentation(pic, 0.01);
+            MessagesHandler.Instance.sendMedia(image: data, video: nil, senderID: senderId, senderName: senderDisplayName);
             
             //Checks if it is a photo then displays it
-        } else  if let vidUrl  = info[UIImagePickerControllerMediaURL] as? URL {
+        } else  if let vidURL  = info[UIImagePickerControllerMediaURL] as? URL {
             
-            let video = JSQVideoMediaItem(fileURL: vidUrl, isReadyToPlay: true);
-            messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, media: video));
+            MessagesHandler.Instance.sendMedia(image: nil, video: vidURL, senderID: senderId, senderName: senderDisplayName);
+
             
             //Checks if it is a video then displays it
         }
@@ -158,6 +171,85 @@ class Chat2VC: JSQMessagesViewController, MessageReceivedDelegate, UIImagePicker
     func messageReceived(senderID: String, senderName: String,  text: String) {
         messages.append(JSQMessage(senderId: senderID, displayName: senderName, text: text));
         collectionView.reloadData();
+    }
+    
+//    func mediaReceived(senderID: String, senderName: String, url: String) {
+//        if let mediaURL = URL(string: url) {
+//            
+//            do {
+//                let data = try Data(contentsOf: mediaURL);
+//                
+//                if let _ = UIImage(data:data) {
+//                    let _ = SDWebImageDownloader.shared().downloadImage(with: mediaURL, options: [], progress: nil, completed: { (image, data, error, finished) in
+//                        
+//                        DispatchQueue.main.async {
+//                            let photo = JSQPhotoMediaItem(image: image)
+//                            if senderID == self.senderId {
+//                                photo?.appliesMediaViewMaskAsOutgoing = true;
+//                            }else {
+//                                photo?.appliesMediaViewMaskAsOutgoing = false;
+//                            }
+//                            self.messages.append(JSQMessage(senderId: senderID, displayName: senderName , media: photo));
+//                            self.collectionView.reloadData();
+//                            
+//                            
+//                        
+//                        }
+//                        
+//                    })
+//                }
+//            } catch {
+//                //Catches all potential errors
+//            }
+//            
+//        }
+//        
+//    }
+    func mediaReceived(senderID: String, senderName: String, url: String) {
+        
+        if let mediaURL = URL(string: url) {
+            
+            do {
+                
+                let data = try Data(contentsOf: mediaURL);
+                
+                if let _ = UIImage(data: data) {
+                    
+                    let _ = SDWebImageDownloader.shared().downloadImage(with: mediaURL, options: [], progress: nil, completed: { (image, data, error, finished) in
+                        
+                        DispatchQueue.main.async {
+                            let photo = JSQPhotoMediaItem(image: image);
+                            if senderID == self.senderId {
+                                photo?.appliesMediaViewMaskAsOutgoing = true;
+                            } else {
+                                photo?.appliesMediaViewMaskAsOutgoing = false;
+                            }
+                            
+                            self.messages.append(JSQMessage(senderId: senderID, displayName: senderName, media: photo));
+                            self.collectionView.reloadData();
+                            
+                        }
+                        
+                    })
+                    
+                } else {
+                    let video = JSQVideoMediaItem(fileURL: mediaURL, isReadyToPlay: true);
+                    if senderID == self.senderId {
+                        video?.appliesMediaViewMaskAsOutgoing = true;
+                    } else {
+                        video?.appliesMediaViewMaskAsOutgoing = false;
+                    }
+                    messages.append(JSQMessage(senderId: senderID, displayName: senderName, media: video));
+                    self.collectionView.reloadData();
+                    
+                }
+                
+            } catch {
+                // here we are gonna catch all potential errors that we get
+            }
+            
+        }
+        
     }
     
     

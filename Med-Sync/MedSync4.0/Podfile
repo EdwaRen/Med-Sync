@@ -11,6 +11,7 @@ pod 'Firebase/Storage'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'JSQMessagesViewController'
+pod 'SDWebImage'
 
 
   target 'MedSync4.0Tests' do
